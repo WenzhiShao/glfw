@@ -38,12 +38,12 @@ project "GLFW"
         files
         {
             "src/win32_init.c",
-            "src/win32_module.c",   --
+            "src/win32_module.c",
             "src/win32_joystick.c",
             "src/win32_monitor.c",
-            "src/win32_time.h",     --
+            "src/win32_time.h",
             "src/win32_time.c",
-            "src/win32_thread.h",   --解决Vulkan.obj相关问题
+            "src/win32_thread.h",
             "src/win32_thread.c",
             "src/win32_window.c",
             "src/wgl_context.c",
@@ -54,7 +54,7 @@ project "GLFW"
 		defines 
 		{ 
             "_GLFW_WIN32",
-            "_CRT_SECURE_NO_WARNINGS"
+            "_CRT_SECURE_NO_WARNINGS",
 		}
     filter { "system:windows", "configurations:Release" }
         buildoptions "/MT"
